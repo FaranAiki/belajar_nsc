@@ -1,0 +1,107 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[indonesian]{babel}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{JUDUL PENELITIAN YANG RELEVAN, SPESIFIK, DAN MENARIK}} \\
+    \vspace{1em} % Spasi antara judul dan ID
+    {\large \textbf{ID Peserta: [Masukkan ID Peserta NSC Naskah]}}
+\end{center}
+\vspace{1.5em}
+
+\section*{Abstrak}
+\addcontentsline{toc}{section}{Abstrak}
+Abstrak harus merangkum keseluruhan isi makalah secara padat dalam satu paragraf (umumnya 150-250 kata). Mencakup latar belakang permasalahan secara singkat, tujuan utama analisis, metode statistika/pembelajaran mesin yang diterapkan, serta temuan utama yang paling berdampak secara aplikatif. Abstrak memberikan gambaran cepat bagi dewan juri mengenai inovasi yang ditawarkan. \textbf{Catatan Penting:} Seluruh naskah ini dari awal hingga akhir lampiran tidak boleh lebih dari 10 halaman.
+
+\section{Latar Belakang}
+Bagian ini menjelaskan urgensi permasalahan dan mengapa masalah ini penting untuk dianalisis. Sampaikan konteks dari \textit{dataset} yang telah disediakan oleh panitia. Pastikan penjelasan disusun secara terstruktur, menggunakan kalimat berstandar akademik, dan mematuhi Pedoman Umum Ejaan Bahasa Indonesia (PUEBI) tanpa adanya salah ketik (\textit{typo}).
+
+\section{Tujuan Penelitian}
+Sebutkan dengan jelas tujuan yang ingin dicapai melalui analisis data ini. Gunakan \textit{bullet points} jika ada lebih dari satu tujuan, agar juri mudah memetakan keselarasan antara tujuan, metode, dan kesimpulan.
+\begin{itemize}
+    \item Mengetahui faktor-faktor utama yang memengaruhi...
+    \item Membangun model prediktif untuk...
+\end{itemize}
+
+\section{Tinjauan Pustaka}
+Sajikan landasan teori secara ringkas yang mendukung metode dan variabel yang kamu gunakan. Bagian ini penting untuk menunjukkan bahwa pendekatan analitismu didasarkan pada literatur atau penelitian terdahulu yang valid dan terpercaya.
+
+\section{Metodologi Analisis}
+Jelaskan metode statistika atau \textit{machine learning} yang digunakan secara \textit{step-by-step}. Sangat penting untuk menunjukkan urutan metode analisis secara logis.
+
+\subsection{Data dan Variabel}
+Jelaskan karakteristik dataset, populasi, sampel, dan definisi operasional variabel yang digunakan dalam analisis (seperti variabel dependen dan independen).
+
+\subsection{Tahapan Analisis}
+Uraikan langkah-langkah yang dilakukan dari awal hingga akhir. Misalnya: (1) Pra-pemrosesan data, (2) Eksplorasi data, (3) Pemeriksaan asumsi, dan (4) Pemodelan.
+
+Jika terdapat persamaan matematis, pastikan penulisannya mematuhi standar notasi ilmiah (huruf tebal untuk matriks/vektor, huruf miring untuk skalar). Contoh penulisan model regresi linear berganda:
+\begin{equation}
+    Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \dots + \beta_p X_{pi} + \epsilon_i
+\end{equation}
+Di mana $Y_i$ adalah variabel dependen skalar, $\beta$ adalah parameter model, $X$ adalah variabel independen, dan $\epsilon_i$ adalah galat acak (\textit{error}).
+
+\section{Hasil dan Pembahasan}
+Sajikan data dan hasil analisis secara relevan, komprehensif, dan mudah dibaca. Pastikan tabel dan gambar memiliki resolusi yang baik dan disitasi dalam teks utama.
+
+\subsection{Analisis Deskriptif}
+Berikan gambaran awal dari data yang digunakan, bisa berupa ukuran pemusatan, penyebaran, atau visualisasi distribusi.
+
+\begin{table}[H]
+    \centering
+    \caption{Statistika Deskriptif Variabel Penelitian}
+    \vspace{0.5em}
+    \begin{tabular}{l c c c}
+        \toprule
+        \textbf{Variabel} & \textbf{Rata-rata} & \textbf{Standar Deviasi} & \textbf{Distribusi} \\
+        \midrule
+        Variabel A & 45.2 & 3.4 & Normal \\
+        Variabel B & 12.1 & 1.2 & Menceng Kanan \\
+        Variabel C & 89.5 & 5.6 & Normal \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Pemeriksaan Asumsi}
+Tunjukkan hasil uji asumsi (misal: normalitas residual, homoskedastisitas, atau multikolinearitas) apabila metode yang dipilih mensyaratkannya. Bagian ini krusial untuk validitas modelmu.
+
+\subsection{Hasil Pemodelan Utama}
+Jabarkan hasil dari metode analisis utama yang kamu lakukan. Bandingkan beberapa model jika relevan, dan tunjukkan metrik kebaikan model (misal: $R^2$, RMSE, atau \textit{Accuracy}).
+
+\subsection{Inovasi dan Aplikasi}
+Terjemahkan hasil matematis/statistik ke dalam bahasa yang bersifat aplikatif dan inovatif. Jelaskan \textit{insight} apa yang bisa diambil oleh pemangku kepentingan (\textit{stakeholder}) dari angka-angka tersebut.
+
+\section{Kesimpulan dan Rekomendasi}
+Tarik kesimpulan yang murni diperoleh dari substansi dan analisis data. Kesimpulan harus langsung menjawab tujuan penelitian. Setelah itu, berikan saran atau \textbf{rekomendasi yang reliabel dan aplikatif} untuk menyelesaikan studi kasus yang diberikan oleh panitia.
+
+\begin{thebibliography}{99}
+\bibitem{ref1}
+Nama Penulis. (Tahun Terbit). \textit{Judul Buku atau Artikel yang Ditulis}. Nama Jurnal atau Penerbit, Volume(Isu), Halaman.
+
+\bibitem{ref2}
+BPS. (2026). \textit{Publikasi Data Statistik Indonesia}. Badan Pusat Statistik. Diakses pada 16 Juni 2026 dari tautan web.
+\end{thebibliography}
+
+\newpage
+\appendix
+\section{Lampiran}
+Letakkan tambahan informasi di sini. Ini dapat mencakup \textit{script} kode analitik (R/Python), \textit{output software} tambahan yang mendukung (namun tidak muat di teks utama), atau penurunan/pembuktian rumus matematika yang terlalu panjang.
+\end{document}
